@@ -1,0 +1,945 @@
+{
+	"info": {
+		"_postman_id": "7aa79c18-f341-4262-9c96-a4eec4282c12",
+		"name": "Colección API - Sistema Educativo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43150258"
+	},
+	"item": [
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "GET Alumno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/alumno",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Alumno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/alumno/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"alumno",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Alumno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"contrasena\": \"1234\",\r\n  \"sexo\": \"Masculino\",\r\n  \"fechaNacimiento\": \"2000-01-15\",\r\n  \"horas\": 120,\r\n  \"especialidad\": \"Informática\",\r\n  \"nacionalidad\": \"Arg\",\r\n  \"domicilio\": \"Av. Siempre Viva 123\",\r\n  \"usuario\": \"juanp\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/alumno",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Alumno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"contrasena\": \"1234\",\r\n  \"sexo\": \"Masculino\",\r\n  \"fechaNacimiento\": \"2000-01-15\",\r\n  \"horas\": 120,\r\n  \"especialidad\": \"Informática\",\r\n  \"nacionalidad\": \"Arg\",\r\n  \"domicilio\": \"Av. Siempre Viva 123\",\r\n  \"usuario\": \"juanp\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/alumno/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"alumno",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Alumno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/alumno/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"alumno",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Curso",
+			"item": [
+				{
+					"name": "GET Curso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/curso",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Curso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/curso/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"curso",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Curso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Programación I\",\r\n  \"gradoAcademico\": \"Grado Técnico\",\r\n  \"descripcion\": \"Curso introductorio a la programación\",\r\n  \"cantidadMaterias\": \"5\",\r\n  \"duracion\": \"6 meses\",\r\n  \"personal\": {\r\n    \"idPersonal\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/curso",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Curso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Programación I\",\r\n  \"gradoAcademico\": \"Grado Técnico\",\r\n  \"descripcion\": \"Curso introductorio a la programación\",\r\n  \"cantidadMaterias\": \"5\",\r\n  \"duracion\": \"6 meses\",\r\n  \"personal\": {\r\n    \"idPersonal\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/curso/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"curso",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Curso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/curso/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"curso",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Examen",
+			"item": [
+				{
+					"name": "GET Examen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/examen",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"examen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Examen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}0/api/examen/{id}",
+							"host": [
+								"{{host}}0"
+							],
+							"path": [
+								"api",
+								"examen",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Examen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Primer parcial de lógica\",\r\n  \"rutaExamen\": \"/examenes/logica_1.pdf\",\r\n  \"calificacion\": 8.5,\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"dni\": 12345678\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/examen",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"examen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Examen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Primer parcial de lógica\",\r\n  \"rutaExamen\": \"/examenes/logica_1.pdf\",\r\n  \"calificacion\": 8.5,\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"dni\": 12345678\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/examen/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"examen",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Examen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/examen/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"examen",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Foro",
+			"item": [
+				{
+					"name": "GET Foro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/foro",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"foro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Foro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/foro/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"foro",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Foro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Foro de discusión sobre estructuras de datos\",\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/foro",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"foro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Foro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descripcion\": \"Foro de discusión sobre estructuras de datos\",\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/foro/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"foro",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Foro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/foro/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"foro",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Material",
+			"item": [
+				{
+					"name": "GET Material",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/material",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"material"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Material",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/material/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"material",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Material",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"observacion\": \"Material complementario sobre recursividad\",\r\n  \"calificacion\": 9.0,\r\n  \"rutaArchivo\": \"/materiales/recursividad.pdf\",\r\n  \"fechaSubida\": \"2025-05-01T10:30:00\",\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"mensaje\": {\r\n    \"idMensaje\": 5\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/material",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"material"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Material",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"observacion\": \"Material complementario sobre recursividad\",\r\n  \"calificacion\": 9.0,\r\n  \"rutaArchivo\": \"/materiales/recursividad.pdf\",\r\n  \"fechaSubida\": \"2025-05-01T10:30:00\",\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"mensaje\": {\r\n    \"idMensaje\": 5\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/material/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"material",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Material",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/material/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"material",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mensaje",
+			"item": [
+				{
+					"name": "GET Mensaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/mensaje",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"mensaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mensaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/mensaje/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"mensaje",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Mensaje",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fechaEnvio\": \"2025-05-01T15:45:00\",\r\n  \"contenido\": \"Estoy de acuerdo con lo mencionado anteriormente.\",\r\n  \"asunto\": \"Re: Tarea 2\",\r\n  \"respuesta\": {\r\n    \"id_mensaje\": 10\r\n  },\r\n  \"foro\": {\r\n    \"foroId\": 3\r\n  },\r\n  \"personal\": {\r\n    \"idPersonal\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"idAlumno\": 2\r\n  },\r\n  \"rutaArchivo\": \"/mensajes/tarea2-comentario.pdf\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/mensaje",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"mensaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Mensaje",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fechaEnvio\": \"2025-05-01T15:45:00\",\r\n  \"contenido\": \"Estoy de acuerdo con lo mencionado anteriormente.\",\r\n  \"asunto\": \"Re: Tarea 2\",\r\n  \"respuesta\": {\r\n    \"id_mensaje\": 10\r\n  },\r\n  \"foro\": {\r\n    \"foroId\": 3\r\n  },\r\n  \"personal\": {\r\n    \"idPersonal\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"idAlumno\": 2\r\n  },\r\n  \"rutaArchivo\": \"/mensajes/tarea2-comentario.pdf\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/mensaje/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"mensaje",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Mensaje",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/mensaje/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"mensaje",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personal",
+			"item": [
+				{
+					"name": "GET Personal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/personal",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Personal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/personal/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"personal",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Personal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ocupacion\": \"Desarrollador de Software\",\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"usuario\": \"juanperez\",\r\n  \"contrasena\": \"123456\",\r\n  \"fechaNacimiento\": \"1990-05-15\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"dni\": 12345678\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/personal",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Personal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ocupacion\": \"Desarrollador de Software\",\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"usuario\": \"juanperez\",\r\n  \"contrasena\": \"123456\",\r\n  \"fechaNacimiento\": \"1990-05-15\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"dni\": 12345678\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/personal/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"personal",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Personal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/personal/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"personal",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unidades",
+			"item": [
+				{
+					"name": "GET Unidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/unidades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"unidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Unidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/unidades/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"unidades",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Unidades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"idAlumno\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/unidades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"unidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Unidades",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"curso\": {\r\n    \"idCurso\": 1\r\n  },\r\n  \"alumno\": {\r\n    \"idAlumno\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/unidades/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"unidades",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Unidades",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/unidades/{id}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"unidades",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8083",
+			"type": "default"
+		}
+	]
+}
